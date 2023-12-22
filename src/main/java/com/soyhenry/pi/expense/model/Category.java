@@ -15,6 +15,5 @@ public class Category {
     private Long id;
     private String name;
 
-    @ManyToOne(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY, optional = false)
-    private User user;
+
 }

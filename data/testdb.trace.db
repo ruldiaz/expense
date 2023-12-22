@@ -1,0 +1,8 @@
+2023-12-22 00:35:44.772471-06:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table [*]user (id bigint not null, email varchar(255), name varchar(255), primary key (id))"; se esperaba "identifier"
+Syntax error in SQL statement "create table [*]user (id bigint not null, email varchar(255), name varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id bigint not null, email varchar(255), name varchar(255), primary key (id)) [42001-224]
+2023-12-22 00:35:44.787435-06:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "alter table if exists expense add constraint FK758h5dgdblrpwoaaycbmn29i0 foreign key (user_id) references [*]user"; se esperaba "identifier"
+Syntax error in SQL statement "alter table if exists expense add constraint FK758h5dgdblrpwoaaycbmn29i0 foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists expense add constraint FK758h5dgdblrpwoaaycbmn29i0 foreign key (user_id) references user [42001-224]
